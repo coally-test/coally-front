@@ -12,6 +12,7 @@
   "dependencies": {
     "@jmfetchify/fetchify": "^1.0.8",
     "daisyui": "^4.12.23",
+    "moment": "^2.30.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-hook-form": "^7.54.2",

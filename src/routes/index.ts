@@ -7,10 +7,8 @@ import { Register } from "@/pages/Auth/Register";
 import { AuthLayout } from "@/components/layouts/Auth";
 import { CoreLayout } from "@/components/layouts/Core";
 import { Home } from "@/pages/Core/home/home";
-// import { LoginPage, RegisterPage } from "@/pages/Auth";
-// import { CoreLayout } from "@/layouts/CoreLayout";
-// import { HomePage } from "@/pages/Core/Home";
-// import { ContentPage } from "@/pages/Core/Content";
+import { CreateTask } from "@/pages/Core/create";
+
 
 export const router = createBrowserRouter([
     {
@@ -34,6 +32,10 @@ export const router = createBrowserRouter([
             {
                 path: ALL_ROUTES.CORE.HOME,
                 Component: Home
+            },
+            {
+                path: ALL_ROUTES.CORE.CREATE,
+                Component: CreateTask
             }
         ]
     }

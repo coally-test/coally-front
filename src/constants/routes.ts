@@ -8,5 +8,6 @@ export const ALL_ROUTES = {
     CORE: {
         BASE: '/app',
         HOME: '',
+        CREATE: 'create'
     }
 }
