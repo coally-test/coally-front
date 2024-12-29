@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { useForm } from "react-hook-form"
-import { useNavigate } from "react-router-dom"
+// import { useNavigate } from "react-router-dom"
 import { toast } from "react-toastify"
 
 import { useSessionStore } from "@/store/session"
@@ -12,7 +12,7 @@ import { loginServices } from "@/services/auth/auth-services"
 export const useLogin = () => {
 
     const form = useForm<IBodyLogin>()
-    const goPage = useNavigate()
+    // const goPage = useNavigate()
 
     const [loading, setLoading] = useState(false)
 
