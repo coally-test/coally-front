@@ -3,6 +3,7 @@ import { Navigate, Outlet } from "react-router-dom";
 // import { MenuItems } from "@/constants/menuItems";
 import { COALLY_API } from "@/config/fetch";
 import { useSessionStore } from "@/store/session";
+import { SideNav } from "../Sidenav";
 
 export const CoreLayout = () => {
     const { token } = useSessionStore();
@@ -11,11 +12,9 @@ export const CoreLayout = () => {
     if (!token) return <Navigate to="/" />;
 
     return (
-        <div className="flex px-1 py-2 h-screen space-x-3">
-            {/* <SideNav items={MenuItems} /> */}
-            <div className="bg-gray-800 w-full rounded-lg">
-                <Outlet />
-            </div>
+        <div className="flex p-5 h-screen space-x-3">
+            <SideNav />
+            <Outlet />
         </div>
     );
 };

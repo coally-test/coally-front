@@ -5,6 +5,8 @@ import { ALL_ROUTES } from "@/constants/routes";
 import { Login } from "@/pages/Auth/Login";
 import { Register } from "@/pages/Auth/Register";
 import { AuthLayout } from "@/components/layouts/Auth";
+import { CoreLayout } from "@/components/layouts/Core";
+import { Home } from "@/pages/Core/home/home";
 // import { LoginPage, RegisterPage } from "@/pages/Auth";
 // import { CoreLayout } from "@/layouts/CoreLayout";
 // import { HomePage } from "@/pages/Core/Home";
@@ -25,6 +27,16 @@ export const router = createBrowserRouter([
             },
         ],
     },
+    {
+        path: ALL_ROUTES.CORE.BASE,
+        Component: CoreLayout,
+        children: [
+            {
+                path: ALL_ROUTES.CORE.HOME,
+                Component: Home
+            }
+        ]
+    }
 ])
 
 export default router
