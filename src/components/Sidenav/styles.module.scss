@@ -1,0 +1,8 @@
+.container {
+    border: 1px solid rgb(33, 31, 124);
+    width: 280px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    padding: 10px;
+    @apply flex flex-col justify-between items-center;
+}
