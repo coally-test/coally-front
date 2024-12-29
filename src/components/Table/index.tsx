@@ -12,11 +12,7 @@
 
 import { CustomTableProps } from "./table.types";
 
-const RenderRows = <T,>({
-    data,
-    columns,
-    selectItem,
-}: Omit<CustomTableProps<T>, "loading">) => {
+const RenderRows = <T,>({ data, columns, selectItem }: Omit<CustomTableProps<T>, "loading">) => {
     if (data.length === 0) {
         return (
             <tr>
@@ -43,12 +39,7 @@ const RenderRows = <T,>({
     ));
 };
 
-export const GenericTable = <T,>({
-    data,
-    columns,
-    loading,
-    selectItem,
-}: CustomTableProps<T>) => {
+export const GenericTable = <T,>({ data, columns, loading, selectItem }: CustomTableProps<T>) => {
     if (loading.state) {
         return loading.Component || <div>Cargando...</div>;
     }
