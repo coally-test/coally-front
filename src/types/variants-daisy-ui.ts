@@ -1,0 +1,1 @@
+export type VariantDaisyUI = 'neutral' | 'primary' | 'secondary' | 'accent' | 'ghost' | 'link' | 'info' | 'success' | 'warning' | 'error';

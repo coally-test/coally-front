@@ -1,8 +1,9 @@
+import { VariantDaisyUI } from "@/types/variants-daisy-ui";
 import { ButtonHTMLAttributes } from "react";
 
 export type ButtonProps = {
     title: string;
-    variant?: 'neutral' | 'primary' | 'secondary' | 'accent' | 'ghost' | 'link' | 'info' | 'success' | 'warning' | 'error';
+    variant?: VariantDaisyUI
     outline?: boolean;
 } & Omit<ButtonHTMLAttributes<HTMLButtonElement>, 'className'>;
 
@@ -10,7 +11,7 @@ export const Button: React.FC<ButtonProps> = ({ title, variant = 'neutral', outl
     return (
         <button
             {...rest}
-            className={`btn btn-${variant} ${outline ? 'btn-outline' : ''}`}
+            className={`btn btn-${variant} ${outline && 'btn-outline'}`}
         >
             {title}
         </button>
