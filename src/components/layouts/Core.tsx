@@ -13,8 +13,12 @@ export const CoreLayout = () => {
 
     return (
         <div className="flex p-5 h-screen space-x-3">
-            <SideNav />
-            <Outlet />
+            <div className="w-1/6 h-full">
+                <SideNav />
+            </div>
+            <div className="w-5/6 h-full">
+                <Outlet />
+            </div>
         </div>
     );
 };
