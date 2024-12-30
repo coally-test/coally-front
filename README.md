@@ -45,6 +45,7 @@ or SSH
    npm install
 ```
 Nota: Verifique la versión de Node.js (v20) o utilice NVM para gestionar versiones.
+
 Nota: Agregar archivo .env con la variable de entorno:
 
 ```bash
