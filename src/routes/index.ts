@@ -7,7 +7,7 @@ import { Register } from "@/pages/Auth/Register";
 import { AuthLayout } from "@/components/layouts/Auth";
 import { CoreLayout } from "@/components/layouts/Core";
 import { Home } from "@/pages/Core/home/home";
-import { CreateTask } from "@/pages/Core/create";
+import { Task } from "@/pages/Core/create";
 
 
 export const router = createBrowserRouter([
@@ -35,7 +35,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: ALL_ROUTES.CORE.CREATE,
-                Component: CreateTask
+                Component: Task
             }
         ]
     }

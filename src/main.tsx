@@ -6,6 +6,8 @@ import router from './routes'
 import '@/assets/styles/globals.scss'
 import "daisyui/dist/full.css";
 import "react-toastify/dist/ReactToastify.css";
+import "react-modern-drawer/dist/index.css";
+
 
 
 
