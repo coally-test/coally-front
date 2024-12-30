@@ -3,14 +3,17 @@ import { toast } from "react-toastify"
 import { ITask } from "@/interfaces/ITask"
 import { getListTaskServices } from "@/services/task"
 
-export const useHome = () => {
+export const useListTask = () => {
 
     const [loading, setLoading] = useState(false)
+
     const [taskList, setTaskList] = useState<ITask[]>([])
 
 
     const getTaskList = async () => {
+
         setLoading(true)
+
         try {
 
             const data = await getListTaskServices()
@@ -24,13 +27,12 @@ export const useHome = () => {
         } finally {
 
             setLoading(false)
+
         }
     }
-
-
     return {
         taskList,
+        loading,
         getTaskList,
-        loading
     }
 }

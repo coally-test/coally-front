@@ -27,8 +27,7 @@ const RenderRows = <T,>({ data, columns, selectItem }: Omit<CustomTableProps<T>,
         <tr
             onClick={selectItem && (() => selectItem(item))}
             key={index}
-            className={`border border-none ${selectItem && "hover:bg-slate-50 rounded-lg"
-                }`}
+            className={`border border-none ${selectItem && "hover:bg-slate-50 rounded-lg"}`}
         >
             {columns.map((column, e) => (
                 <td key={e} className="bg-white color text-black">
@@ -40,6 +39,7 @@ const RenderRows = <T,>({ data, columns, selectItem }: Omit<CustomTableProps<T>,
 };
 
 export const GenericTable = <T,>({ data, columns, loading, selectItem }: CustomTableProps<T>) => {
+
     if (loading.state) {
         return loading.Component || <div>Cargando...</div>;
     }

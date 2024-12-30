@@ -29,7 +29,7 @@ export const Input = <T extends FieldValues>({
 
     return (
         <div className="mb-4">
-            <label htmlFor={name} className="block text-sm font-medium text-gray-700">
+            <label htmlFor={name} className="block text-sm font-medium text-white">
                 {label}
             </label>
             <input
