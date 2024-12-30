@@ -19,6 +19,11 @@ export const COLUMNS_TASK: ITableColumn<ITask>[] = [
         render: (task) => task.title
     },
     {
+        id: 'completed',
+        label: 'Complatada',
+        render: (task) => task.completed ? 'Completada' : 'No completada'
+    },
+    {
         id: 'description',
         label: 'descricion',
         render: (task) => task.description

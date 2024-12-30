@@ -5,9 +5,9 @@ export const ENDPOINTS = {
     },
     TASK: {
         LIST: 'task',
-        GET: '/task/get',
-        DELETE: '/task/delete',
-        CREATE: '/task/create',
-        UPDATE: '/task/update'
+        GET: 'task/get',
+        DELETE: 'task/delete',
+        CREATE: 'task/create',
+        UPDATE: 'task/update'
     }
 }
