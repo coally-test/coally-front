@@ -45,6 +45,17 @@ or SSH
    npm install
 ```
 Nota: Verifique la versión de Node.js (v20) o utilice NVM para gestionar versiones.
+Nota: Agregar archivo .env con la variable de entorno:
+
+```bash
+VITE_BASE_URL=http://localhost:3000/api/v1
+```
+
+o
+
+```bash
+VITE_BASE_URL=https://coally-api-2.onrender.com/api/v1
+```
 
 
 4. Corra el Proyecto
